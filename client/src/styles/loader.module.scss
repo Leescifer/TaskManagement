@@ -1,0 +1,31 @@
+.loader{ 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    height: 100vh;
+
+    .bounce{
+        animation: bounce 1s infinite;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+
+        .text{
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #050505;
+        }
+    }
+    
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateX(-15px);
+    }
+}
